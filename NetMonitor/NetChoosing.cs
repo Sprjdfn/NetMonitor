@@ -51,7 +51,6 @@ namespace NetMonitor
 				listBox.Widget.Items.Add(newItem);
 			}
 			((NButton)nPairBoxControl1.Widget.Box1).Click += applyButton_Click;
-			((NButton)nPairBoxControl1.Widget.Box2).Click += cancelButton_Click;
 		}
 
 		private void flushButton_Click(Nevron.Nov.Dom.NEventArgs arg)

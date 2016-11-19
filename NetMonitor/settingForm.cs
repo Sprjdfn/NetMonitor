@@ -16,5 +16,10 @@ namespace NetMonitor
 		{
 			InitializeComponent();
 		}
+
+		private void settingForm_Load(object sender, EventArgs e)
+		{
+			themeChoosing1.target = (Form1)Owner;
+		}
 	}
 }

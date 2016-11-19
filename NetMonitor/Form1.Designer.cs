@@ -37,26 +37,39 @@
 			this.notifyMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.background = new System.Windows.Forms.PictureBox();
 			this.notifyMenuStrip.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.background)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// uploadSpeed
 			// 
 			this.uploadSpeed.AutoSize = true;
-			this.uploadSpeed.Location = new System.Drawing.Point(12, 9);
+			this.uploadSpeed.Location = new System.Drawing.Point(53, 17);
 			this.uploadSpeed.Name = "uploadSpeed";
 			this.uploadSpeed.Size = new System.Drawing.Size(55, 15);
 			this.uploadSpeed.TabIndex = 0;
 			this.uploadSpeed.Text = "label1";
+			this.uploadSpeed.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
+			this.uploadSpeed.MouseEnter += new System.EventHandler(this.Form1_MouseEnter);
+			this.uploadSpeed.MouseLeave += new System.EventHandler(this.Form1_MouseLeave);
+			this.uploadSpeed.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseMove);
+			this.uploadSpeed.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseUp);
 			// 
 			// downloadSpeed
 			// 
+			this.downloadSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.downloadSpeed.AutoSize = true;
-			this.downloadSpeed.Location = new System.Drawing.Point(12, 34);
+			this.downloadSpeed.Location = new System.Drawing.Point(53, 53);
 			this.downloadSpeed.Name = "downloadSpeed";
 			this.downloadSpeed.Size = new System.Drawing.Size(55, 15);
 			this.downloadSpeed.TabIndex = 1;
 			this.downloadSpeed.Text = "label1";
+			this.downloadSpeed.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
+			this.downloadSpeed.MouseEnter += new System.EventHandler(this.Form1_MouseEnter);
+			this.downloadSpeed.MouseLeave += new System.EventHandler(this.Form1_MouseLeave);
+			this.downloadSpeed.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseMove);
+			this.downloadSpeed.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseUp);
 			// 
 			// timer1
 			// 
@@ -95,6 +108,21 @@
 			this.exitToolStripMenuItem.Text = "Exit";
 			this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
 			// 
+			// background
+			// 
+			this.background.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.background.Location = new System.Drawing.Point(0, 0);
+			this.background.Name = "background";
+			this.background.Size = new System.Drawing.Size(152, 67);
+			this.background.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.background.TabIndex = 2;
+			this.background.TabStop = false;
+			this.background.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
+			this.background.MouseEnter += new System.EventHandler(this.Form1_MouseEnter);
+			this.background.MouseLeave += new System.EventHandler(this.Form1_MouseLeave);
+			this.background.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseMove);
+			this.background.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseUp);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -103,6 +131,7 @@
 			this.ControlBox = false;
 			this.Controls.Add(this.downloadSpeed);
 			this.Controls.Add(this.uploadSpeed);
+			this.Controls.Add(this.background);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "Form1";
@@ -118,6 +147,7 @@
 			this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseMove);
 			this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseUp);
 			this.notifyMenuStrip.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.background)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -132,6 +162,7 @@
         private System.Windows.Forms.ContextMenuStrip notifyMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem settingToolStripMenuItem;
+		private System.Windows.Forms.PictureBox background;
 	}
 }
 

@@ -93,6 +93,12 @@ namespace NetMonitor
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
 			uploadSpeed.Text = "Upload:   -";
 			downloadSpeed.Text = "Download: -";
+			uploadSpeed.Parent = background;
+			downloadSpeed.Parent = background;
+			uploadSpeed.BackColor = Color.Transparent;
+			downloadSpeed.BackColor = Color.Transparent;
+			this.TransparencyKey = this.BackColor;
+			background.Image = Properties.theme.ResourceManager.GetObject(Properties.Appearance.Default.theme) as Image;
         }
 
         private string getSpeed(long speed)
@@ -141,7 +147,13 @@ namespace NetMonitor
 		private void settingToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			settingForm setForm = new settingForm();
+			setForm.Owner = this;
 			setForm.Show();
+		}
+
+		public void reflushUI()
+		{
+			Form1_Load(null, null);
 		}
 	}
 }
