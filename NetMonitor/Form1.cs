@@ -141,7 +141,7 @@ namespace NetMonitor
 
         private void Form1_MouseLeave(object sender, EventArgs e)
         {
-            this.Opacity = 0.3;
+            this.Opacity = 0.5;
         }
 
 		private void settingToolStripMenuItem_Click(object sender, EventArgs e)

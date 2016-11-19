@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("NetMonitor")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Sprjdfn")]
 [assembly: AssemblyProduct("NetMonitor")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCopyright("Copyright Monitor ©  2016 Sprjdfn")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
