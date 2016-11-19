@@ -106,8 +106,8 @@ namespace NetMonitor
             if (speed < 1024)
                 return speed.ToString() + "Byte";
             if (speed < 1048576)
-                return (speed / 1024).ToString() + "KB";
-            return (speed / 1048576).ToString() + "MB";
+                return (speed / 1024.0).ToString("F2") + "KB";
+            return (speed / 1048576.0).ToString("F2") + "MB";
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -153,6 +153,9 @@ namespace NetMonitor
 
 		public void reflushUI()
 		{
+			Properties.Appearance.Default.locationX = Location.X;
+			Properties.Appearance.Default.locationY = Location.Y;
+			Properties.Appearance.Default.Save();
 			Form1_Load(null, null);
 		}
 	}
