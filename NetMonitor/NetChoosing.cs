@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Nevron.Nov.UI;
 using Echevil;
 using Nevron.Nov.Graphics;
+using System.Threading;
 
 namespace NetMonitor
 {
@@ -22,92 +23,83 @@ namespace NetMonitor
 
 		private NetworkMonitor monitor = new NetworkMonitor();
 
+		private string getSpeed(long speed)
+		{
+			if (speed < 1024)
+				return speed.ToString() + "Byte";
+			if (speed < 1048576)
+				return (speed / 1024.0).ToString("F2") + "KB";
+			return (speed / 1048576.0).ToString("F2") + "MB";
+		}
+
 		private void NetChoosing_Load(object sender, EventArgs e)
 		{
+			Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(Properties.Appearance.Default.Language);
 			monitor.StartMonitoring();
 			foreach (NetworkAdapter tmp in monitor.Adapters)
 			{
-				NStackPanel newPanel = new NStackPanel();
-				newPanel.Padding = new Nevron.Nov.Graphics.NMargins(3);
-				NLabel tmpLabel1 = new NLabel(tmp.Name);
-				NImageBox tmpImage1 = new NImageBox();
-				tmpImage1.Image = NImage.FromFile(Application.StartupPath + "/Image/network.png");
-				NPairBox pairBox1 = new NPairBox(tmpImage1, tmpLabel1);
-				pairBox1.Spacing = 3;
-				newPanel.Add(pairBox1);
-				NLabel tmpLabel2 = new NLabel(tmp.UploadSpeed.ToString());
-				NImageBox tmpImage2 = new NImageBox();
-				tmpImage2.Image = NImage.FromFile(Application.StartupPath + "/Image/upload.png");
-				NPairBox pairBox2 = new NPairBox(tmpImage2, tmpLabel2);
-				pairBox2.Spacing = 3;
-				newPanel.Add(pairBox2);
-				NLabel tmpLabel3 = new NLabel(tmp.DownloadSpeed.ToString());
-				NImageBox tmpImage3 = new NImageBox();
-				tmpImage3.Image = NImage.FromFile(Application.StartupPath + "/Image/download.png");
-				NPairBox pairBox3 = new NPairBox(tmpImage3, tmpLabel3);
-				pairBox3.Spacing = 3;
-				newPanel.Add(pairBox3);
-				NListBoxItem newItem = new NListBoxItem(newPanel);
-				listBox.Widget.Items.Add(newItem);
-			}
-			((NButton)nPairBoxControl1.Widget.Box1).Click += applyButton_Click;
-		}
-
-		private void flushButton_Click(Nevron.Nov.Dom.NEventArgs arg)
-		{
-			listBox.Widget.Items.Clear();
-			foreach (NetworkAdapter tmp in monitor.Adapters)
-			{
-				NStackPanel newPanel = new NStackPanel();
-				newPanel.Padding = new Nevron.Nov.Graphics.NMargins(3);
-				NLabel tmpLabel1 = new NLabel(tmp.Name);
-				NImageBox tmpImage1 = new NImageBox();
-				tmpImage1.Image = NImage.FromFile(Application.StartupPath + "/Image/network.png");
-				NPairBox pairBox1 = new NPairBox(tmpImage1, tmpLabel1);
-				pairBox1.Spacing = 3;
-				newPanel.Add(pairBox1);
-				NLabel tmpLabel2 = new NLabel(tmp.UploadSpeed.ToString());
-				NImageBox tmpImage2 = new NImageBox();
-				tmpImage2.Image = NImage.FromFile(Application.StartupPath + "/Image/upload.png");
-				NPairBox pairBox2 = new NPairBox(tmpImage2, tmpLabel2);
-				pairBox2.Spacing = 3;
-				newPanel.Add(pairBox2);
-				NLabel tmpLabel3 = new NLabel(tmp.DownloadSpeed.ToString());
-				NImageBox tmpImage3 = new NImageBox();
-				tmpImage3.Image = NImage.FromFile(Application.StartupPath + "/Image/download.png");
-				NPairBox pairBox3 = new NPairBox(tmpImage3, tmpLabel3);
-				pairBox3.Spacing = 3;
-				newPanel.Add(pairBox3);
-				NListBoxItem newItem = new NListBoxItem(newPanel);
-				listBox.Widget.Items.Add(newItem);
+				ListViewItem item = new ListViewItem();
+				item.Name = tmp.Name;
+				item.Text = tmp.Name;
+				ListViewItem.ListViewSubItem sub1 = new ListViewItem.ListViewSubItem();
+				sub1.Text = tmp.Name;
+				sub1.Name = "name";
+				item.SubItems.Add(sub1);
+				ListViewItem.ListViewSubItem sub2 = new ListViewItem.ListViewSubItem();
+				sub2.Text = getSpeed(tmp.UploadSpeed);
+				sub2.Name = "upload";
+				item.SubItems.Add(sub2);
+				ListViewItem.ListViewSubItem sub3 = new ListViewItem.ListViewSubItem();
+				sub3.Text = getSpeed(tmp.UploadSpeed);
+				sub3.Name = "upload";
+				item.SubItems.Add(sub3);
+				listBox.Items.Add(item);
 			}
 		}
+		
 
 		private void flushTimer_Tick(object sender, EventArgs e)
 		{
-			for (int i = 0; i < listBox.Widget.Items.Count; i++)
+			foreach (ListViewItem tmp in listBox.Items)
 			{
-				NListBoxItem tmp = listBox.Widget.Items[i];
 				foreach (NetworkAdapter tmpAdapter in monitor.Adapters)
 				{
-					if (((NLabel)((NPairBox)((NStackPanel)tmp.GetFirstChild()).GetChildAt(0)).Box2).Text == tmpAdapter.Name)
+					if (tmp.Name == tmpAdapter.Name)
 					{
-						((NLabel)((NPairBox)((NStackPanel)tmp.GetFirstChild()).GetChildAt(1)).Box2).Text = tmpAdapter.UploadSpeed.ToString();
-						((NLabel)((NPairBox)((NStackPanel)tmp.GetFirstChild()).GetChildAt(2)).Box2).Text = tmpAdapter.DownloadSpeed.ToString();
+						tmp.SubItems[1].Text = getSpeed(tmpAdapter.UploadSpeed);
+						tmp.SubItems[2].Text = getSpeed(tmpAdapter.DownloadSpeed);
 					}
 				}
 			}
 		}
 
-		private void applyButton_Click(Nevron.Nov.Dom.NEventArgs arg)
+		private void reflushButton_Click(object sender, EventArgs e)
 		{
-			Properties.Settings.Default.NetAdapter = ((NLabel)((NPairBox)((NStackPanel)listBox.Widget.Selection.SelectedItems[0].GetFirstChild()).GetChildAt(0)).Box2).Text;
-			Properties.Settings.Default.Save();
+			listBox.Items.Clear();
+			foreach (NetworkAdapter tmp in monitor.Adapters)
+			{
+				ListViewItem item = new ListViewItem();
+				item.Name = tmp.Name;
+				ListViewItem.ListViewSubItem sub1 = new ListViewItem.ListViewSubItem();
+				sub1.Text = Name;
+				sub1.Name = "name";
+				item.SubItems.Add(sub1);
+				ListViewItem.ListViewSubItem sub2 = new ListViewItem.ListViewSubItem();
+				sub2.Text = getSpeed(tmp.UploadSpeed);
+				sub2.Name = "upload";
+				item.SubItems.Add(sub2);
+				ListViewItem.ListViewSubItem sub3 = new ListViewItem.ListViewSubItem();
+				sub3.Text = getSpeed(tmp.UploadSpeed);
+				sub3.Name = "upload";
+				item.SubItems.Add(sub3);
+				listBox.Items.Add(item);
+			}
 		}
 
-		private void cancelButton_Click(Nevron.Nov.Dom.NEventArgs arg)
+		private void netChooseButton_Click(object sender, EventArgs e)
 		{
-			flushButton_Click(arg);
+			Properties.Settings.Default.NetAdapter = listBox.SelectedItems[0].Name;
+			Properties.Settings.Default.Save();
 		}
 	}
 }

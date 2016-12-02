@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -12,12 +13,13 @@ using System.Windows.Forms;
 
 namespace NetMonitor
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
 
         NetworkMonitor monitor = new NetworkMonitor();
         private bool isMouseDown;
         private Point mouseOffset;
+		private ResourceManager rm = new ResourceManager(typeof(MainForm));
 
         /// <summary>
         /// 按下鼠标事件
@@ -64,7 +66,7 @@ namespace NetMonitor
         }
 
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -86,13 +88,14 @@ namespace NetMonitor
 
         private void Form1_Load(object sender, EventArgs e)
         {
+			Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(Properties.Appearance.Default.Language);
             Thread backGround = new Thread(new ThreadStart(monitor.StartMonitoring));
             backGround.Start();
             Location = new Point(Properties.Appearance.Default.locationX, Properties.Appearance.Default.locationY);
             this.FormBorderStyle = FormBorderStyle.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			uploadSpeed.Text = "Upload:   -";
-			downloadSpeed.Text = "Download: -";
+			uploadSpeed.Text = rm.GetString("upload") + "-";
+			downloadSpeed.Text = rm.GetString("download") + "-";
 			uploadSpeed.Parent = background;
 			downloadSpeed.Parent = background;
 			uploadSpeed.BackColor = Color.Transparent;
@@ -104,7 +107,7 @@ namespace NetMonitor
         private string getSpeed(long speed)
         {
             if (speed < 1024)
-                return speed.ToString() + "Byte";
+                return speed.ToString() + rm.GetString("Byte");
             if (speed < 1048576)
                 return (speed / 1024.0).ToString("F2") + "KB";
             return (speed / 1048576.0).ToString("F2") + "MB";
@@ -116,8 +119,8 @@ namespace NetMonitor
 			{
 				if (tmp.Name == Properties.Settings.Default.NetAdapter)
 				{
-					uploadSpeed.Text = "Upload:   " + getSpeed(tmp.UploadSpeed);
-					downloadSpeed.Text = "Download: " + getSpeed(tmp.DownloadSpeed);
+					uploadSpeed.Text = rm.GetString("upload") + getSpeed(tmp.UploadSpeed);
+					downloadSpeed.Text = rm.GetString("download") + getSpeed(tmp.DownloadSpeed);
 				}
 			}
         }

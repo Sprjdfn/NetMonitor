@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,7 +20,8 @@ namespace NetMonitor
 
 		private void settingForm_Load(object sender, EventArgs e)
 		{
-			themeChoosing1.target = (Form1)Owner;
+			Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(Properties.Appearance.Default.Language);
+			themeChoosing1.target = (MainForm)Owner;
 		}
 	}
 }

@@ -32,46 +32,36 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(themeChoosing));
 			this.themeImageList = new System.Windows.Forms.ImageList(this.components);
 			this.themeList = new System.Windows.Forms.ListView();
-			this.nButtonControl1 = new Nevron.Nov.WinFormControls.NButtonControl();
+			this.themeChooseButton = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// themeImageList
 			// 
 			this.themeImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-			this.themeImageList.ImageSize = new System.Drawing.Size(80, 50);
+			resources.ApplyResources(this.themeImageList, "themeImageList");
 			this.themeImageList.TransparentColor = System.Drawing.Color.Transparent;
 			// 
 			// themeList
 			// 
-			this.themeList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			resources.ApplyResources(this.themeList, "themeList");
 			this.themeList.LargeImageList = this.themeImageList;
-			this.themeList.Location = new System.Drawing.Point(0, 0);
 			this.themeList.Name = "themeList";
-			this.themeList.Size = new System.Drawing.Size(550, 482);
-			this.themeList.TabIndex = 1;
 			this.themeList.UseCompatibleStateImageBehavior = false;
 			// 
-			// nButtonControl1
+			// themeChooseButton
 			// 
-			this.nButtonControl1.AutoSize = false;
-			this.nButtonControl1.DesignTimeState = resources.GetString("nButtonControl1.DesignTimeState");
-			this.nButtonControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.nButtonControl1.Location = new System.Drawing.Point(0, 481);
-			this.nButtonControl1.Name = "nButtonControl1";
-			this.nButtonControl1.Size = new System.Drawing.Size(550, 23);
-			this.nButtonControl1.TabIndex = 2;
-			this.nButtonControl1.Click += new Nevron.Nov.Function<Nevron.Nov.Dom.NEventArgs>(this.nButtonControl1_Click);
+			resources.ApplyResources(this.themeChooseButton, "themeChooseButton");
+			this.themeChooseButton.Name = "themeChooseButton";
+			this.themeChooseButton.UseVisualStyleBackColor = true;
+			this.themeChooseButton.Click += new System.EventHandler(this.themeChooseButton_Click);
 			// 
 			// themeChoosing
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.nButtonControl1);
+			this.Controls.Add(this.themeChooseButton);
 			this.Controls.Add(this.themeList);
 			this.Name = "themeChoosing";
-			this.Size = new System.Drawing.Size(550, 504);
 			this.Load += new System.EventHandler(this.themeChoosing_Load);
 			this.ResumeLayout(false);
 
@@ -81,6 +71,6 @@
 
 		private System.Windows.Forms.ImageList themeImageList;
 		private System.Windows.Forms.ListView themeList;
-		private Nevron.Nov.WinFormControls.NButtonControl nButtonControl1;
+		private System.Windows.Forms.Button themeChooseButton;
 	}
 }

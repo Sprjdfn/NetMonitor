@@ -73,9 +73,6 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NetworkMonitor">
-      <HintPath>..\NetworkMonitor\bin\NetworkMonitor.dll</HintPath>
-    </Reference>
     <Reference Include="Nevron.Nov.Barcode, Version=16.9.2.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
     <Reference Include="Nevron.Nov.Chart, Version=16.9.2.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
     <Reference Include="Nevron.Nov.Diagram, Version=16.9.2.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
@@ -109,11 +106,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Appearance.settings</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -134,10 +131,22 @@
     <Compile Include="themeChoosing.Designer.cs">
       <DependentUpon>themeChoosing.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.en.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.zh-CHS.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetChoosing.en.resx">
+      <DependentUpon>NetChoosing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NetChoosing.resx">
+      <DependentUpon>NetChoosing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetChoosing.zh-CHS.resx">
       <DependentUpon>NetChoosing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -150,6 +159,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="settingForm.en.resx">
+      <DependentUpon>settingForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="settingForm.resx">
       <DependentUpon>settingForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,7 +169,16 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>theme.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="settingForm.zh-CHS.resx">
+      <DependentUpon>settingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="themeChoosing.en.resx">
+      <DependentUpon>themeChoosing.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="themeChoosing.resx">
+      <DependentUpon>themeChoosing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="themeChoosing.zh-CHS.resx">
       <DependentUpon>themeChoosing.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Appearance.settings">
@@ -198,6 +219,13 @@
   <ItemGroup>
     <None Include="Resources\network.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetworkMonitor\NetworkMonitor.csproj">
+      <Project>{094f3735-b09d-4721-8b37-02a155482b1b}</Project>
+      <Name>NetworkMonitor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

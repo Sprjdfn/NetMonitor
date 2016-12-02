@@ -1,6 +1,6 @@
 ﻿namespace NetMonitor
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.uploadSpeed = new System.Windows.Forms.Label();
 			this.downloadSpeed = new System.Windows.Forms.Label();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -44,12 +44,8 @@
 			// 
 			// uploadSpeed
 			// 
-			this.uploadSpeed.AutoSize = true;
-			this.uploadSpeed.Location = new System.Drawing.Point(53, 17);
+			resources.ApplyResources(this.uploadSpeed, "uploadSpeed");
 			this.uploadSpeed.Name = "uploadSpeed";
-			this.uploadSpeed.Size = new System.Drawing.Size(55, 15);
-			this.uploadSpeed.TabIndex = 0;
-			this.uploadSpeed.Text = "label1";
 			this.uploadSpeed.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
 			this.uploadSpeed.MouseEnter += new System.EventHandler(this.Form1_MouseEnter);
 			this.uploadSpeed.MouseLeave += new System.EventHandler(this.Form1_MouseLeave);
@@ -58,13 +54,8 @@
 			// 
 			// downloadSpeed
 			// 
-			this.downloadSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.downloadSpeed.AutoSize = true;
-			this.downloadSpeed.Location = new System.Drawing.Point(53, 53);
+			resources.ApplyResources(this.downloadSpeed, "downloadSpeed");
 			this.downloadSpeed.Name = "downloadSpeed";
-			this.downloadSpeed.Size = new System.Drawing.Size(55, 15);
-			this.downloadSpeed.TabIndex = 1;
-			this.downloadSpeed.Text = "label1";
 			this.downloadSpeed.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
 			this.downloadSpeed.MouseEnter += new System.EventHandler(this.Form1_MouseEnter);
 			this.downloadSpeed.MouseLeave += new System.EventHandler(this.Form1_MouseLeave);
@@ -78,44 +69,34 @@
 			// 
 			// notifyIcon1
 			// 
-			this.notifyIcon1.BalloonTipText = "ssss";
-			this.notifyIcon1.BalloonTipTitle = "sss";
+			resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
 			this.notifyIcon1.ContextMenuStrip = this.notifyMenuStrip;
-			this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-			this.notifyIcon1.Text = "NetMonitor";
-			this.notifyIcon1.Visible = true;
 			// 
 			// notifyMenuStrip
 			// 
+			resources.ApplyResources(this.notifyMenuStrip, "notifyMenuStrip");
 			this.notifyMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
 			this.notifyMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.settingToolStripMenuItem,
             this.exitToolStripMenuItem});
 			this.notifyMenuStrip.Name = "notifyMenuStrip";
-			this.notifyMenuStrip.Size = new System.Drawing.Size(138, 56);
 			// 
 			// settingToolStripMenuItem
 			// 
+			resources.ApplyResources(this.settingToolStripMenuItem, "settingToolStripMenuItem");
 			this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
-			this.settingToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
-			this.settingToolStripMenuItem.Text = "Setting";
 			this.settingToolStripMenuItem.Click += new System.EventHandler(this.settingToolStripMenuItem_Click);
 			// 
 			// exitToolStripMenuItem
 			// 
+			resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
 			this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-			this.exitToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
-			this.exitToolStripMenuItem.Text = "Exit";
 			this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
 			// 
 			// background
 			// 
-			this.background.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.background.Location = new System.Drawing.Point(0, 0);
+			resources.ApplyResources(this.background, "background");
 			this.background.Name = "background";
-			this.background.Size = new System.Drawing.Size(152, 67);
-			this.background.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.background.TabIndex = 2;
 			this.background.TabStop = false;
 			this.background.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
 			this.background.MouseEnter += new System.EventHandler(this.Form1_MouseEnter);
@@ -123,18 +104,17 @@
 			this.background.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseMove);
 			this.background.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseUp);
 			// 
-			// Form1
+			// MainForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(152, 67);
 			this.ControlBox = false;
 			this.Controls.Add(this.downloadSpeed);
 			this.Controls.Add(this.uploadSpeed);
 			this.Controls.Add(this.background);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
-			this.Name = "Form1";
+			this.Name = "MainForm";
 			this.Opacity = 0.5D;
 			this.ShowIcon = false;
 			this.ShowInTaskbar = false;

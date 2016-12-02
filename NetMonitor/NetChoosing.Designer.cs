@@ -30,69 +30,78 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NetChoosing));
-			this.listBox = new Nevron.Nov.WinFormControls.NListBoxControl();
-			this.ReflushButton = new Nevron.Nov.WinFormControls.NButtonControl();
 			this.flushTimer = new System.Windows.Forms.Timer(this.components);
-			this.nPairBoxControl1 = new Nevron.Nov.WinFormControls.NPairBoxControl();
+			this.reflushButton = new System.Windows.Forms.Button();
+			this.netChooseButton = new System.Windows.Forms.Button();
+			this.listBox = new System.Windows.Forms.ListView();
+			this.nameColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.uploadColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.downloadColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.SuspendLayout();
-			// 
-			// listBox
-			// 
-			this.listBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.listBox.AutoSize = false;
-			this.listBox.DesignTimeState = null;
-			this.listBox.Location = new System.Drawing.Point(0, 23);
-			this.listBox.Name = "listBox";
-			this.listBox.Size = new System.Drawing.Size(404, 412);
-			this.listBox.TabIndex = 0;
-			// 
-			// ReflushButton
-			// 
-			this.ReflushButton.AutoSize = false;
-			this.ReflushButton.DesignTimeState = resources.GetString("ReflushButton.DesignTimeState");
-			this.ReflushButton.Dock = System.Windows.Forms.DockStyle.Top;
-			this.ReflushButton.Location = new System.Drawing.Point(0, 0);
-			this.ReflushButton.Name = "ReflushButton";
-			this.ReflushButton.Size = new System.Drawing.Size(404, 23);
-			this.ReflushButton.TabIndex = 1;
-			this.ReflushButton.Click += new Nevron.Nov.Function<Nevron.Nov.Dom.NEventArgs>(this.flushButton_Click);
 			// 
 			// flushTimer
 			// 
 			this.flushTimer.Enabled = true;
 			this.flushTimer.Tick += new System.EventHandler(this.flushTimer_Tick);
 			// 
-			// nPairBoxControl1
+			// reflushButton
 			// 
-			this.nPairBoxControl1.AutoSize = false;
-			this.nPairBoxControl1.DesignTimeState = resources.GetString("nPairBoxControl1.DesignTimeState");
-			this.nPairBoxControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.nPairBoxControl1.Location = new System.Drawing.Point(0, 436);
-			this.nPairBoxControl1.Name = "nPairBoxControl1";
-			this.nPairBoxControl1.Size = new System.Drawing.Size(404, 23);
-			this.nPairBoxControl1.TabIndex = 2;
+			resources.ApplyResources(this.reflushButton, "reflushButton");
+			this.reflushButton.Name = "reflushButton";
+			this.reflushButton.UseVisualStyleBackColor = true;
+			this.reflushButton.Click += new System.EventHandler(this.reflushButton_Click);
+			// 
+			// netChooseButton
+			// 
+			resources.ApplyResources(this.netChooseButton, "netChooseButton");
+			this.netChooseButton.Name = "netChooseButton";
+			this.netChooseButton.UseVisualStyleBackColor = true;
+			this.netChooseButton.Click += new System.EventHandler(this.netChooseButton_Click);
+			// 
+			// listBox
+			// 
+			resources.ApplyResources(this.listBox, "listBox");
+			this.listBox.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.nameColumnHeader,
+            this.uploadColumnHeader,
+            this.downloadColumnHeader});
+			this.listBox.MultiSelect = false;
+			this.listBox.Name = "listBox";
+			this.listBox.UseCompatibleStateImageBehavior = false;
+			this.listBox.View = System.Windows.Forms.View.Details;
+			// 
+			// nameColumnHeader
+			// 
+			resources.ApplyResources(this.nameColumnHeader, "nameColumnHeader");
+			// 
+			// uploadColumnHeader
+			// 
+			resources.ApplyResources(this.uploadColumnHeader, "uploadColumnHeader");
+			// 
+			// downloadColumnHeader
+			// 
+			resources.ApplyResources(this.downloadColumnHeader, "downloadColumnHeader");
 			// 
 			// NetChoosing
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.nPairBoxControl1);
-			this.Controls.Add(this.ReflushButton);
 			this.Controls.Add(this.listBox);
+			this.Controls.Add(this.netChooseButton);
+			this.Controls.Add(this.reflushButton);
 			this.Name = "NetChoosing";
-			this.Size = new System.Drawing.Size(404, 459);
 			this.Load += new System.EventHandler(this.NetChoosing_Load);
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
-
-		private Nevron.Nov.WinFormControls.NListBoxControl listBox;
-		private Nevron.Nov.WinFormControls.NButtonControl ReflushButton;
 		private System.Windows.Forms.Timer flushTimer;
-		private Nevron.Nov.WinFormControls.NPairBoxControl nPairBoxControl1;
+		private System.Windows.Forms.Button reflushButton;
+		private System.Windows.Forms.Button netChooseButton;
+		private System.Windows.Forms.ListView listBox;
+		private System.Windows.Forms.ColumnHeader nameColumnHeader;
+		private System.Windows.Forms.ColumnHeader uploadColumnHeader;
+		private System.Windows.Forms.ColumnHeader downloadColumnHeader;
 	}
 }

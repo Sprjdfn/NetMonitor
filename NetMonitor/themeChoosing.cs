@@ -17,7 +17,7 @@ namespace NetMonitor
 			InitializeComponent();
 		}
 
-		public Form1 target;
+		public MainForm target;
 
 		private void themeChoosing_Load(object sender, EventArgs e)
 		{
@@ -41,7 +41,7 @@ namespace NetMonitor
 			themeList.EndUpdate();
 		}
 
-		private void nButtonControl1_Click(Nevron.Nov.Dom.NEventArgs arg)
+		private void themeChooseButton_Click(object sender, EventArgs e)
 		{
 			Properties.Appearance.Default.theme = themeList.SelectedItems[0].Name;
 			Properties.Appearance.Default.Save();

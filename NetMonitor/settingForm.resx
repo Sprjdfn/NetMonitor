@@ -117,4 +117,190 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="nTabControl1.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="nTabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="nTabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="nTabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>861, 475</value>
+  </data>
+  <data name="nTabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;nTabControl1.Name" xml:space="preserve">
+    <value>nTabControl1</value>
+  </data>
+  <data name="&gt;&gt;nTabControl1.Type" xml:space="preserve">
+    <value>Nevron.Nov.WinFormControls.NTabControl, Nevron.Nov.WinFormControls, Version=16.9.2.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad</value>
+  </data>
+  <data name="&gt;&gt;nTabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;nTabControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;netChoosing1.Name" xml:space="preserve">
+    <value>netChoosing1</value>
+  </data>
+  <data name="&gt;&gt;netChoosing1.Type" xml:space="preserve">
+    <value>NetMonitor.NetChoosing, NetMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;netChoosing1.Parent" xml:space="preserve">
+    <value>choosePage</value>
+  </data>
+  <data name="&gt;&gt;netChoosing1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="choosePage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="choosePage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="choosePage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>853, 446</value>
+  </data>
+  <data name="choosePage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="choosePage.Text" xml:space="preserve">
+    <value>选择网络</value>
+  </data>
+  <data name="&gt;&gt;choosePage.Name" xml:space="preserve">
+    <value>choosePage</value>
+  </data>
+  <data name="&gt;&gt;choosePage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;choosePage.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;choosePage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="themeChoosing1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="themeChoosing1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="themeChoosing1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>847, 440</value>
+  </data>
+  <data name="themeChoosing1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;themeChoosing1.Name" xml:space="preserve">
+    <value>themeChoosing1</value>
+  </data>
+  <data name="&gt;&gt;themeChoosing1.Type" xml:space="preserve">
+    <value>NetMonitor.themeChoosing, NetMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;themeChoosing1.Parent" xml:space="preserve">
+    <value>themePage</value>
+  </data>
+  <data name="&gt;&gt;themeChoosing1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="themePage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="themePage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="themePage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>853, 446</value>
+  </data>
+  <data name="themePage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="themePage.Text" xml:space="preserve">
+    <value>外观</value>
+  </data>
+  <data name="&gt;&gt;themePage.Name" xml:space="preserve">
+    <value>themePage</value>
+  </data>
+  <data name="&gt;&gt;themePage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;themePage.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;themePage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>861, 475</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="netChoosing1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="netChoosing1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="netChoosing1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>847, 440</value>
+  </data>
+  <data name="netChoosing1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;netChoosing1.Name" xml:space="preserve">
+    <value>netChoosing1</value>
+  </data>
+  <data name="&gt;&gt;netChoosing1.Type" xml:space="preserve">
+    <value>NetMonitor.NetChoosing, NetMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;netChoosing1.Parent" xml:space="preserve">
+    <value>choosePage</value>
+  </data>
+  <data name="&gt;&gt;netChoosing1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>861, 475</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>settingForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

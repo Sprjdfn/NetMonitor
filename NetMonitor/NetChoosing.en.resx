@@ -117,85 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="themeChooseButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 481</value>
+  <data name="downloadColumnHeader.Text" xml:space="preserve">
+    <value>Download</value>
   </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>550, 504</value>
+  <data name="nameColumnHeader.Text" xml:space="preserve">
+    <value>Name</value>
   </data>
-  <data name="&gt;&gt;themeList.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="themeList.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="themeList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;themeImageList.Name" xml:space="preserve">
-    <value>themeImageList</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 15</value>
-  </data>
-  <data name="themeImageList.ImageSize" type="System.Drawing.Size, System.Drawing">
-    <value>80, 50</value>
-  </data>
-  <data name="themeChooseButton.Text" xml:space="preserve">
+  <data name="netChooseButton.Text" xml:space="preserve">
     <value>Choose</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="themeList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="reflushButton.Text" xml:space="preserve">
+    <value>Flush</value>
   </data>
-  <data name="&gt;&gt;themeList.Name" xml:space="preserve">
-    <value>themeList</value>
+  <data name="uploadColumnHeader.Text" xml:space="preserve">
+    <value>Upload</value>
   </data>
-  <data name="themeList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>550, 482</value>
-  </data>
-  <data name="&gt;&gt;themeList.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>themeChoosing</value>
-  </data>
-  <data name="&gt;&gt;themeList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="themeChooseButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="&gt;&gt;themeChooseButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;themeChooseButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;themeImageList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;themeChooseButton.Name" xml:space="preserve">
-    <value>themeChooseButton</value>
-  </data>
-  <data name="themeChooseButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>550, 23</value>
-  </data>
-  <data name="&gt;&gt;themeChooseButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="themeChooseButton.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="themeImageList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
 </root>
