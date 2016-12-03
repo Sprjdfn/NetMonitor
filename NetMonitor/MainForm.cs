@@ -1,19 +1,13 @@
 ﻿using Echevil;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Resources;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NetMonitor
 {
-    public partial class MainForm : Form
+	public partial class MainForm : Form
     {
 
         NetworkMonitor monitor = new NetworkMonitor();

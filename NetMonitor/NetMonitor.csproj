@@ -73,15 +73,6 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Nevron.Nov.Barcode, Version=16.9.2.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
-    <Reference Include="Nevron.Nov.Chart, Version=16.9.2.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
-    <Reference Include="Nevron.Nov.Diagram, Version=16.9.2.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
-    <Reference Include="Nevron.Nov.Grid, Version=16.9.2.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
-    <Reference Include="Nevron.Nov.Host.WinForm, Version=16.9.2.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
-    <Reference Include="Nevron.Nov.Presentation, Version=16.9.2.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
-    <Reference Include="Nevron.Nov.Schedule, Version=16.9.2.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
-    <Reference Include="Nevron.Nov.Text, Version=16.9.2.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
-    <Reference Include="Nevron.Nov.WinFormControls, Version=16.9.2.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -94,6 +85,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeneralPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeneralPage.Designer.cs">
+      <DependentUpon>GeneralPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="NetChoosing.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -131,6 +128,9 @@
     <Compile Include="themeChoosing.Designer.cs">
       <DependentUpon>themeChoosing.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GeneralPage.resx">
+      <DependentUpon>GeneralPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.en.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
