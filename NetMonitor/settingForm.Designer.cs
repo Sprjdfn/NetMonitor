@@ -30,29 +30,45 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(settingForm));
 			this.tabControl1 = new System.Windows.Forms.TabControl();
-			this.NetworkPage = new System.Windows.Forms.TabPage();
+			this.generalPage = new System.Windows.Forms.TabPage();
+			this.generalPage1 = new NetMonitor.GeneralPage();
+			this.networkPage = new System.Windows.Forms.TabPage();
 			this.netChoosing1 = new NetMonitor.NetChoosing();
 			this.themePage = new System.Windows.Forms.TabPage();
 			this.themeChoosing1 = new NetMonitor.themeChoosing();
 			this.tabControl1.SuspendLayout();
-			this.NetworkPage.SuspendLayout();
+			this.generalPage.SuspendLayout();
+			this.networkPage.SuspendLayout();
 			this.themePage.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// tabControl1
 			// 
-			this.tabControl1.Controls.Add(this.NetworkPage);
+			this.tabControl1.Controls.Add(this.generalPage);
+			this.tabControl1.Controls.Add(this.networkPage);
 			this.tabControl1.Controls.Add(this.themePage);
 			resources.ApplyResources(this.tabControl1, "tabControl1");
 			this.tabControl1.Name = "tabControl1";
 			this.tabControl1.SelectedIndex = 0;
 			// 
-			// NetworkPage
+			// generalPage
 			// 
-			this.NetworkPage.Controls.Add(this.netChoosing1);
-			resources.ApplyResources(this.NetworkPage, "NetworkPage");
-			this.NetworkPage.Name = "NetworkPage";
-			this.NetworkPage.UseVisualStyleBackColor = true;
+			this.generalPage.Controls.Add(this.generalPage1);
+			resources.ApplyResources(this.generalPage, "generalPage");
+			this.generalPage.Name = "generalPage";
+			this.generalPage.UseVisualStyleBackColor = true;
+			// 
+			// generalPage1
+			// 
+			resources.ApplyResources(this.generalPage1, "generalPage1");
+			this.generalPage1.Name = "generalPage1";
+			// 
+			// networkPage
+			// 
+			this.networkPage.Controls.Add(this.netChoosing1);
+			resources.ApplyResources(this.networkPage, "networkPage");
+			this.networkPage.Name = "networkPage";
+			this.networkPage.UseVisualStyleBackColor = true;
 			// 
 			// netChoosing1
 			// 
@@ -78,8 +94,10 @@
 			this.Controls.Add(this.tabControl1);
 			this.Name = "settingForm";
 			this.Load += new System.EventHandler(this.settingForm_Load);
+			this.Resize += new System.EventHandler(this.settingForm_Resize);
 			this.tabControl1.ResumeLayout(false);
-			this.NetworkPage.ResumeLayout(false);
+			this.generalPage.ResumeLayout(false);
+			this.networkPage.ResumeLayout(false);
 			this.themePage.ResumeLayout(false);
 			this.ResumeLayout(false);
 
@@ -88,8 +106,10 @@
 		#endregion
 		private NetChoosing netChoosing1;
 		private System.Windows.Forms.TabControl tabControl1;
-		private System.Windows.Forms.TabPage NetworkPage;
+		private System.Windows.Forms.TabPage networkPage;
 		private System.Windows.Forms.TabPage themePage;
 		private themeChoosing themeChoosing1;
+		private System.Windows.Forms.TabPage generalPage;
+		private GeneralPage generalPage1;
 	}
 }

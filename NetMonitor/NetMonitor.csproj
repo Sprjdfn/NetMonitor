@@ -128,7 +128,13 @@
     <Compile Include="themeChoosing.Designer.cs">
       <DependentUpon>themeChoosing.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GeneralPage.en.resx">
+      <DependentUpon>GeneralPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GeneralPage.resx">
+      <DependentUpon>GeneralPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralPage.zh-CHS.resx">
       <DependentUpon>GeneralPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.en.resx">

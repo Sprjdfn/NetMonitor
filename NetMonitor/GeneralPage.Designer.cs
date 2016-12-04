@@ -28,25 +28,42 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GeneralPage));
 			this.languageGroupBox = new System.Windows.Forms.GroupBox();
+			this.langApplyButton = new System.Windows.Forms.Button();
+			this.languageBox = new System.Windows.Forms.ComboBox();
+			this.languageGroupBox.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// languageGroupBox
 			// 
-			this.languageGroupBox.Location = new System.Drawing.Point(16, 14);
+			this.languageGroupBox.Controls.Add(this.langApplyButton);
+			this.languageGroupBox.Controls.Add(this.languageBox);
+			resources.ApplyResources(this.languageGroupBox, "languageGroupBox");
 			this.languageGroupBox.Name = "languageGroupBox";
-			this.languageGroupBox.Size = new System.Drawing.Size(593, 92);
-			this.languageGroupBox.TabIndex = 0;
 			this.languageGroupBox.TabStop = false;
-			this.languageGroupBox.Text = "Language";
+			// 
+			// langApplyButton
+			// 
+			resources.ApplyResources(this.langApplyButton, "langApplyButton");
+			this.langApplyButton.Name = "langApplyButton";
+			this.langApplyButton.UseVisualStyleBackColor = true;
+			this.langApplyButton.Click += new System.EventHandler(this.langApplyButton_Click);
+			// 
+			// languageBox
+			// 
+			this.languageBox.FormattingEnabled = true;
+			resources.ApplyResources(this.languageBox, "languageBox");
+			this.languageBox.Name = "languageBox";
 			// 
 			// GeneralPage
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.Controls.Add(this.languageGroupBox);
 			this.Name = "GeneralPage";
-			this.Size = new System.Drawing.Size(626, 508);
+			this.Load += new System.EventHandler(this.GeneralPage_Load);
+			this.languageGroupBox.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -54,5 +71,7 @@
 		#endregion
 
 		private System.Windows.Forms.GroupBox languageGroupBox;
+		private System.Windows.Forms.ComboBox languageBox;
+		private System.Windows.Forms.Button langApplyButton;
 	}
 }

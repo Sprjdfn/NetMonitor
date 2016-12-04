@@ -31,7 +31,7 @@
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NetChoosing));
 			this.flushTimer = new System.Windows.Forms.Timer(this.components);
-			this.reflushButton = new System.Windows.Forms.Button();
+			this.refreshButton = new System.Windows.Forms.Button();
 			this.netChooseButton = new System.Windows.Forms.Button();
 			this.listBox = new System.Windows.Forms.ListView();
 			this.nameColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -44,12 +44,12 @@
 			this.flushTimer.Enabled = true;
 			this.flushTimer.Tick += new System.EventHandler(this.flushTimer_Tick);
 			// 
-			// reflushButton
+			// refreshButton
 			// 
-			resources.ApplyResources(this.reflushButton, "reflushButton");
-			this.reflushButton.Name = "reflushButton";
-			this.reflushButton.UseVisualStyleBackColor = true;
-			this.reflushButton.Click += new System.EventHandler(this.reflushButton_Click);
+			resources.ApplyResources(this.refreshButton, "refreshButton");
+			this.refreshButton.Name = "refreshButton";
+			this.refreshButton.UseVisualStyleBackColor = true;
+			this.refreshButton.Click += new System.EventHandler(this.reflushButton_Click);
 			// 
 			// netChooseButton
 			// 
@@ -60,11 +60,11 @@
 			// 
 			// listBox
 			// 
-			resources.ApplyResources(this.listBox, "listBox");
 			this.listBox.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.nameColumnHeader,
             this.uploadColumnHeader,
             this.downloadColumnHeader});
+			resources.ApplyResources(this.listBox, "listBox");
 			this.listBox.MultiSelect = false;
 			this.listBox.Name = "listBox";
 			this.listBox.UseCompatibleStateImageBehavior = false;
@@ -88,7 +88,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.Controls.Add(this.listBox);
 			this.Controls.Add(this.netChooseButton);
-			this.Controls.Add(this.reflushButton);
+			this.Controls.Add(this.refreshButton);
 			this.Name = "NetChoosing";
 			this.Load += new System.EventHandler(this.NetChoosing_Load);
 			this.ResumeLayout(false);
@@ -97,7 +97,7 @@
 
 		#endregion
 		private System.Windows.Forms.Timer flushTimer;
-		private System.Windows.Forms.Button reflushButton;
+		private System.Windows.Forms.Button refreshButton;
 		private System.Windows.Forms.Button netChooseButton;
 		private System.Windows.Forms.ListView listBox;
 		private System.Windows.Forms.ColumnHeader nameColumnHeader;

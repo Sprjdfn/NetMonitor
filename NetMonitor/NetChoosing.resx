@@ -117,89 +117,80 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="flushTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="netChooseButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
+  <data name="refreshButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="listBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 23</value>
+  <data name="refreshButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 15</value>
-  </data>
-  <data name="&gt;&gt;uploadColumnHeader.Name" xml:space="preserve">
-    <value>uploadColumnHeader</value>
-  </data>
-  <data name="reflushButton.Text" xml:space="preserve">
-    <value>Reflush</value>
-  </data>
-  <data name="&gt;&gt;netChooseButton.Name" xml:space="preserve">
-    <value>netChooseButton</value>
+  <data name="refreshButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>404, 23</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="nameColumnHeader.Width" type="System.Int32, mscorlib">
-    <value>160</value>
+  <data name="refreshButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="refreshButton.Text" xml:space="preserve">
+    <value>Refresh</value>
   </data>
-  <data name="uploadColumnHeader.Text" xml:space="preserve">
-    <value>Upload</value>
+  <data name="&gt;&gt;refreshButton.Name" xml:space="preserve">
+    <value>refreshButton</value>
   </data>
-  <data name="&gt;&gt;uploadColumnHeader.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;refreshButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="listBox.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="nameColumnHeader.Text" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="&gt;&gt;netChooseButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;reflushButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;refreshButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>NetChoosing</value>
+  <data name="&gt;&gt;refreshButton.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="reflushButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="netChooseButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
   </data>
   <data name="netChooseButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 436</value>
   </data>
-  <data name="&gt;&gt;listBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;reflushButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;reflushButton.Name" xml:space="preserve">
-    <value>reflushButton</value>
-  </data>
-  <data name="&gt;&gt;listBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="reflushButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="netChooseButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>404, 23</value>
   </data>
-  <data name="&gt;&gt;reflushButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="netChooseButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="netChooseButton.Text" xml:space="preserve">
+    <value>Choose</value>
+  </data>
+  <data name="&gt;&gt;netChooseButton.Name" xml:space="preserve">
+    <value>netChooseButton</value>
   </data>
   <data name="&gt;&gt;netChooseButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;downloadColumnHeader.Name" xml:space="preserve">
-    <value>downloadColumnHeader</value>
-  </data>
-  <data name="listBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>404, 413</value>
-  </data>
   <data name="&gt;&gt;netChooseButton.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;netChooseButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="nameColumnHeader.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="nameColumnHeader.Width" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="uploadColumnHeader.Text" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="uploadColumnHeader.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="downloadColumnHeader.Text" xml:space="preserve">
+    <value>Download</value>
   </data>
   <data name="downloadColumnHeader.Width" type="System.Int32, mscorlib">
     <value>80</value>
@@ -207,55 +198,64 @@
   <data name="listBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="netChooseButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="listBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 23</value>
   </data>
-  <data name="reflushButton.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="listBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>404, 413</value>
   </data>
-  <data name="netChooseButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>404, 23</value>
-  </data>
-  <data name="&gt;&gt;listBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;flushTimer.Name" xml:space="preserve">
-    <value>flushTimer</value>
+  <data name="listBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;listBox.Name" xml:space="preserve">
     <value>listBox</value>
   </data>
-  <data name="&gt;&gt;nameColumnHeader.Name" xml:space="preserve">
-    <value>nameColumnHeader</value>
+  <data name="&gt;&gt;listBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="uploadColumnHeader.Width" type="System.Int32, mscorlib">
-    <value>80</value>
+  <data name="&gt;&gt;listBox.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;downloadColumnHeader.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="netChooseButton.Text" xml:space="preserve">
-    <value>Choose</value>
-  </data>
-  <data name="downloadColumnHeader.Text" xml:space="preserve">
-    <value>Download</value>
-  </data>
-  <data name="&gt;&gt;nameColumnHeader.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="reflushButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>404, 459</value>
-  </data>
-  <data name="&gt;&gt;flushTimer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;listBox.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="flushTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 15</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>404, 459</value>
+  </data>
+  <data name="&gt;&gt;flushTimer.Name" xml:space="preserve">
+    <value>flushTimer</value>
+  </data>
+  <data name="&gt;&gt;flushTimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nameColumnHeader.Name" xml:space="preserve">
+    <value>nameColumnHeader</value>
+  </data>
+  <data name="&gt;&gt;nameColumnHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;uploadColumnHeader.Name" xml:space="preserve">
+    <value>uploadColumnHeader</value>
+  </data>
+  <data name="&gt;&gt;uploadColumnHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;downloadColumnHeader.Name" xml:space="preserve">
+    <value>downloadColumnHeader</value>
+  </data>
+  <data name="&gt;&gt;downloadColumnHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>NetChoosing</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

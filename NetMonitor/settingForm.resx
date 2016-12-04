@@ -118,17 +118,65 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="netChoosing1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="generalPage1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="generalPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="generalPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>853, 446</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="generalPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;generalPage1.Name" xml:space="preserve">
+    <value>generalPage1</value>
+  </data>
+  <data name="&gt;&gt;generalPage1.Type" xml:space="preserve">
+    <value>NetMonitor.GeneralPage, NetMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;generalPage1.Parent" xml:space="preserve">
+    <value>generalPage</value>
+  </data>
+  <data name="&gt;&gt;generalPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="generalPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="generalPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>853, 446</value>
+  </data>
+  <data name="generalPage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="generalPage.Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="&gt;&gt;generalPage.Name" xml:space="preserve">
+    <value>generalPage</value>
+  </data>
+  <data name="&gt;&gt;generalPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;generalPage.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;generalPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="netChoosing1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="netChoosing1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
   <data name="netChoosing1.Size" type="System.Drawing.Size, System.Drawing">
     <value>847, 440</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="netChoosing1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -139,37 +187,37 @@
     <value>NetMonitor.NetChoosing, NetMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;netChoosing1.Parent" xml:space="preserve">
-    <value>NetworkPage</value>
+    <value>networkPage</value>
   </data>
   <data name="&gt;&gt;netChoosing1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="NetworkPage.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="networkPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
   </data>
-  <data name="NetworkPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="networkPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="NetworkPage.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="networkPage.Size" type="System.Drawing.Size, System.Drawing">
     <value>853, 446</value>
   </data>
-  <data name="NetworkPage.TabIndex" type="System.Int32, mscorlib">
+  <data name="networkPage.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="NetworkPage.Text" xml:space="preserve">
+  <data name="networkPage.Text" xml:space="preserve">
     <value>Network</value>
   </data>
-  <data name="&gt;&gt;NetworkPage.Name" xml:space="preserve">
-    <value>NetworkPage</value>
+  <data name="&gt;&gt;networkPage.Name" xml:space="preserve">
+    <value>networkPage</value>
   </data>
-  <data name="&gt;&gt;NetworkPage.Type" xml:space="preserve">
+  <data name="&gt;&gt;networkPage.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;NetworkPage.Parent" xml:space="preserve">
+  <data name="&gt;&gt;networkPage.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;NetworkPage.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;networkPage.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="themeChoosing1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -220,7 +268,7 @@
     <value>tabControl1</value>
   </data>
   <data name="&gt;&gt;themePage.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="tabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>

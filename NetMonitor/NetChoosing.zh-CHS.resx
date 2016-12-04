@@ -126,7 +126,7 @@
   <data name="netChooseButton.Text" xml:space="preserve">
     <value>选择</value>
   </data>
-  <data name="reflushButton.Text" xml:space="preserve">
+  <data name="refreshButton.Text" xml:space="preserve">
     <value>刷新</value>
   </data>
   <data name="uploadColumnHeader.Text" xml:space="preserve">

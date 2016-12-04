@@ -117,10 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="networkPage.Text" xml:space="preserve">
-    <value>网络</value>
+  <data name="changedLanguage" xml:space="preserve">
+    <value>部分更改重启后生效</value>
   </data>
-  <data name="themePage.Text" xml:space="preserve">
-    <value>主题</value>
+  <data name="langApplyButton.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="languageGroupBox.Text" xml:space="preserve">
+    <value>Language</value>
   </data>
 </root>
