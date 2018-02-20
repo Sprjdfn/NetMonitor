@@ -119,16 +119,25 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="settingToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+    <value>175, 24</value>
   </data>
   <data name="settingToolStripMenuItem.Text" xml:space="preserve">
     <value>设置</value>
   </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 24</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>关于</value>
+  </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+    <value>175, 24</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>退出</value>
   </data>
   <data name="notifyMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 56</value>
+    <value>176, 104</value>
   </data>
   <data name="notifyIcon1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4643,14 +4652,5 @@
   </data>
   <data name="Byte" xml:space="preserve">
     <value>字节</value>
-  </data>
-  <data name="download" xml:space="preserve">
-    <value>下载 : </value>
-  </data>
-  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
-    <value>退出</value>
-  </data>
-  <data name="upload" xml:space="preserve">
-    <value>上传 : </value>
   </data>
 </root>

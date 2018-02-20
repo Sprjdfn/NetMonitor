@@ -121,10 +121,157 @@
   <data name="Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Blue_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\blue_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blue_downLPosX" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="Blue_downLPosY" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="Blue_downPosX" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="Blue_downPosY" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="Blue_foreColor" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="Blue_sizeX" xml:space="preserve">
+    <value>120</value>
+  </data>
+  <data name="Blue_sizeY" xml:space="preserve">
+    <value>70</value>
+  </data>
+  <data name="Blue_udSizeX" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="Blue_udSizeY" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="Blue_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blue_upLPosX" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="Blue_upLPosY" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="Blue_upPosX" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="Blue_upPosY" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Blue_view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue_view.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dark_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dark_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dark_downLPosX" xml:space="preserve">
+    <value>140</value>
+  </data>
+  <data name="Dark_downLPosY" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Dark_downPosX" xml:space="preserve">
+    <value>110</value>
+  </data>
+  <data name="Dark_downPosY" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Dark_foreColor" xml:space="preserve">
+    <value>White</value>
+  </data>
+  <data name="Dark_sizeX" xml:space="preserve">
+    <value>200</value>
+  </data>
+  <data name="Dark_sizeY" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="Dark_udSizeX" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="Dark_udSizeY" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="Dark_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dark_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dark_upLPosX" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="Dark_upLPosY" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Dark_upPosX" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="Dark_upPosY" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Dark_view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dark_view.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Red_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red_downLPosX" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="Red_downLPosY" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="Red_downPosX" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="Red_downPosY" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="Red_foreColor" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="Red_sizeX" xml:space="preserve">
+    <value>120</value>
+  </data>
+  <data name="Red_sizeY" xml:space="preserve">
+    <value>70</value>
+  </data>
+  <data name="Red_udSizeX" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="Red_udSizeY" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="Red_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red_upLPosX" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="Red_upLPosY" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="Red_upPosX" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="Red_upPosY" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Red_view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red_view.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="themeList" xml:space="preserve">
-    <value>Blue;Red</value>
+    <value>Blue;Red;Dark</value>
   </data>
 </root>

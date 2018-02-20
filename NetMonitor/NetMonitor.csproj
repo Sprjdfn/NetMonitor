@@ -85,6 +85,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="GeneralPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -128,6 +134,15 @@
     <Compile Include="themeChoosing.Designer.cs">
       <DependentUpon>themeChoosing.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AboutBox.en.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutBox.zh-CHS.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GeneralPage.en.resx">
       <DependentUpon>GeneralPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,9 +223,6 @@
     <None Include="Resources\Blue.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Red.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\themeList.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -231,7 +243,19 @@
       <Name>NetworkMonitor</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\Blue_down.png" />
+    <None Include="Resources\Red_view.png" />
+    <None Include="Resources\Dark_view.png" />
+    <None Include="Resources\Blue_view.png" />
+    <None Include="Resources\Dark.png" />
+    <None Include="Resources\Dark_down.png" />
+    <None Include="Resources\Dark_up.png" />
+    <None Include="Resources\Red_up.png" />
+    <None Include="Resources\Red_down.png" />
+    <None Include="Resources\Red.png" />
+    <None Include="Resources\Blue_up.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

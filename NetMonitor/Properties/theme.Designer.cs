@@ -19,7 +19,7 @@ namespace NetMonitor.Properties {
     // 类通过类似于 ResGen 或 Visual Studio 的工具自动生成的。
     // 若要添加或移除成员，请编辑 .ResX 文件，然后重新运行 ResGen
     // (以 /str 作为命令选项)，或重新生成 VS 项目。
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class theme {
@@ -73,6 +73,310 @@ namespace NetMonitor.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap Blue_down {
+            get {
+                object obj = ResourceManager.GetObject("Blue_down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 44 的本地化字符串。
+        /// </summary>
+        internal static string Blue_downLPosX {
+            get {
+                return ResourceManager.GetString("Blue_downLPosX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 43 的本地化字符串。
+        /// </summary>
+        internal static string Blue_downLPosY {
+            get {
+                return ResourceManager.GetString("Blue_downLPosY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 15 的本地化字符串。
+        /// </summary>
+        internal static string Blue_downPosX {
+            get {
+                return ResourceManager.GetString("Blue_downPosX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 40 的本地化字符串。
+        /// </summary>
+        internal static string Blue_downPosY {
+            get {
+                return ResourceManager.GetString("Blue_downPosY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Black 的本地化字符串。
+        /// </summary>
+        internal static string Blue_foreColor {
+            get {
+                return ResourceManager.GetString("Blue_foreColor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 120 的本地化字符串。
+        /// </summary>
+        internal static string Blue_sizeX {
+            get {
+                return ResourceManager.GetString("Blue_sizeX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 70 的本地化字符串。
+        /// </summary>
+        internal static string Blue_sizeY {
+            get {
+                return ResourceManager.GetString("Blue_sizeY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 23 的本地化字符串。
+        /// </summary>
+        internal static string Blue_udSizeX {
+            get {
+                return ResourceManager.GetString("Blue_udSizeX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 23 的本地化字符串。
+        /// </summary>
+        internal static string Blue_udSizeY {
+            get {
+                return ResourceManager.GetString("Blue_udSizeY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Blue_up {
+            get {
+                object obj = ResourceManager.GetObject("Blue_up", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 44 的本地化字符串。
+        /// </summary>
+        internal static string Blue_upLPosX {
+            get {
+                return ResourceManager.GetString("Blue_upLPosX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 15 的本地化字符串。
+        /// </summary>
+        internal static string Blue_upLPosY {
+            get {
+                return ResourceManager.GetString("Blue_upLPosY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 15 的本地化字符串。
+        /// </summary>
+        internal static string Blue_upPosX {
+            get {
+                return ResourceManager.GetString("Blue_upPosX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 9 的本地化字符串。
+        /// </summary>
+        internal static string Blue_upPosY {
+            get {
+                return ResourceManager.GetString("Blue_upPosY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Blue_view {
+            get {
+                object obj = ResourceManager.GetObject("Blue_view", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Dark {
+            get {
+                object obj = ResourceManager.GetObject("Dark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Dark_down {
+            get {
+                object obj = ResourceManager.GetObject("Dark_down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 140 的本地化字符串。
+        /// </summary>
+        internal static string Dark_downLPosX {
+            get {
+                return ResourceManager.GetString("Dark_downLPosX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 7 的本地化字符串。
+        /// </summary>
+        internal static string Dark_downLPosY {
+            get {
+                return ResourceManager.GetString("Dark_downLPosY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 110 的本地化字符串。
+        /// </summary>
+        internal static string Dark_downPosX {
+            get {
+                return ResourceManager.GetString("Dark_downPosX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 2 的本地化字符串。
+        /// </summary>
+        internal static string Dark_downPosY {
+            get {
+                return ResourceManager.GetString("Dark_downPosY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 White 的本地化字符串。
+        /// </summary>
+        internal static string Dark_foreColor {
+            get {
+                return ResourceManager.GetString("Dark_foreColor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 200 的本地化字符串。
+        /// </summary>
+        internal static string Dark_sizeX {
+            get {
+                return ResourceManager.GetString("Dark_sizeX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 23 的本地化字符串。
+        /// </summary>
+        internal static string Dark_sizeY {
+            get {
+                return ResourceManager.GetString("Dark_sizeY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 23 的本地化字符串。
+        /// </summary>
+        internal static string Dark_udSizeX {
+            get {
+                return ResourceManager.GetString("Dark_udSizeX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 23 的本地化字符串。
+        /// </summary>
+        internal static string Dark_udSizeY {
+            get {
+                return ResourceManager.GetString("Dark_udSizeY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Dark_up {
+            get {
+                object obj = ResourceManager.GetObject("Dark_up", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 44 的本地化字符串。
+        /// </summary>
+        internal static string Dark_upLPosX {
+            get {
+                return ResourceManager.GetString("Dark_upLPosX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 7 的本地化字符串。
+        /// </summary>
+        internal static string Dark_upLPosY {
+            get {
+                return ResourceManager.GetString("Dark_upLPosY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 15 的本地化字符串。
+        /// </summary>
+        internal static string Dark_upPosX {
+            get {
+                return ResourceManager.GetString("Dark_upPosX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 2 的本地化字符串。
+        /// </summary>
+        internal static string Dark_upPosY {
+            get {
+                return ResourceManager.GetString("Dark_upPosY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Dark_view {
+            get {
+                object obj = ResourceManager.GetObject("Dark_view", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap Red {
             get {
                 object obj = ResourceManager.GetObject("Red", resourceCulture);
@@ -81,7 +385,154 @@ namespace NetMonitor.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Blue;Red 的本地化字符串。
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Red_down {
+            get {
+                object obj = ResourceManager.GetObject("Red_down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 44 的本地化字符串。
+        /// </summary>
+        internal static string Red_downLPosX {
+            get {
+                return ResourceManager.GetString("Red_downLPosX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 43 的本地化字符串。
+        /// </summary>
+        internal static string Red_downLPosY {
+            get {
+                return ResourceManager.GetString("Red_downLPosY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 15 的本地化字符串。
+        /// </summary>
+        internal static string Red_downPosX {
+            get {
+                return ResourceManager.GetString("Red_downPosX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 40 的本地化字符串。
+        /// </summary>
+        internal static string Red_downPosY {
+            get {
+                return ResourceManager.GetString("Red_downPosY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Black 的本地化字符串。
+        /// </summary>
+        internal static string Red_foreColor {
+            get {
+                return ResourceManager.GetString("Red_foreColor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 120 的本地化字符串。
+        /// </summary>
+        internal static string Red_sizeX {
+            get {
+                return ResourceManager.GetString("Red_sizeX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 70 的本地化字符串。
+        /// </summary>
+        internal static string Red_sizeY {
+            get {
+                return ResourceManager.GetString("Red_sizeY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 23 的本地化字符串。
+        /// </summary>
+        internal static string Red_udSizeX {
+            get {
+                return ResourceManager.GetString("Red_udSizeX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 23 的本地化字符串。
+        /// </summary>
+        internal static string Red_udSizeY {
+            get {
+                return ResourceManager.GetString("Red_udSizeY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Red_up {
+            get {
+                object obj = ResourceManager.GetObject("Red_up", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 44 的本地化字符串。
+        /// </summary>
+        internal static string Red_upLPosX {
+            get {
+                return ResourceManager.GetString("Red_upLPosX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 15 的本地化字符串。
+        /// </summary>
+        internal static string Red_upLPosY {
+            get {
+                return ResourceManager.GetString("Red_upLPosY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 15 的本地化字符串。
+        /// </summary>
+        internal static string Red_upPosX {
+            get {
+                return ResourceManager.GetString("Red_upPosX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 9 的本地化字符串。
+        /// </summary>
+        internal static string Red_upPosY {
+            get {
+                return ResourceManager.GetString("Red_upPosY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Red_view {
+            get {
+                object obj = ResourceManager.GetObject("Red_view", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Blue;Red;Dark 的本地化字符串。
         /// </summary>
         internal static string themeList {
             get {

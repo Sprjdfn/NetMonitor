@@ -2,12 +2,14 @@
 using System;
 using System.Drawing;
 using System.Resources;
+using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
 
 namespace NetMonitor
 {
-	public partial class MainForm : Form
+    
+    public partial class MainForm : Form
     {
 
         NetworkMonitor monitor = new NetworkMonitor();
@@ -88,14 +90,34 @@ namespace NetMonitor
             Location = new Point(Properties.Appearance.Default.locationX, Properties.Appearance.Default.locationY);
             this.FormBorderStyle = FormBorderStyle.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			uploadSpeed.Text = rm.GetString("upload") + "-";
-			downloadSpeed.Text = rm.GetString("download") + "-";
+			uploadSpeed.Text = "-";
+			downloadSpeed.Text = "-";
+            //设置图像
 			uploadSpeed.Parent = background;
 			downloadSpeed.Parent = background;
-			uploadSpeed.BackColor = Color.Transparent;
+            upPicture.Parent = background;
+            downPicture.Parent = background;
+            uploadSpeed.BackColor = Color.Transparent;
 			downloadSpeed.BackColor = Color.Transparent;
+            upPicture.BackColor = Color.Transparent;
+            downPicture.BackColor = Color.Transparent;
 			this.TransparencyKey = this.BackColor;
 			background.Image = Properties.theme.ResourceManager.GetObject(Properties.Appearance.Default.theme) as Image;
+            upPicture.Image = Properties.theme.ResourceManager.GetObject(Properties.Appearance.Default.theme + "_up") as Image;
+            downPicture.Image = Properties.theme.ResourceManager.GetObject(Properties.Appearance.Default.theme + "_down") as Image;
+            //设置上传下载图标位置
+            upPicture.Location = new Point(int.Parse(Properties.theme.ResourceManager.GetString(Properties.Appearance.Default.theme + "_upPosX")), int.Parse(Properties.theme.ResourceManager.GetString(Properties.Appearance.Default.theme + "_upPosY")));
+            downPicture.Location = new Point(int.Parse(Properties.theme.ResourceManager.GetString(Properties.Appearance.Default.theme + "_downPosX")), int.Parse(Properties.theme.ResourceManager.GetString(Properties.Appearance.Default.theme + "_downPosY")));
+            //设置上传下载图标大小
+            upPicture.Size = new Size(int.Parse(Properties.theme.ResourceManager.GetString(Properties.Appearance.Default.theme + "_udSizeX")), int.Parse(Properties.theme.ResourceManager.GetString(Properties.Appearance.Default.theme + "_udSizeY")));
+            downPicture.Size = new Size(int.Parse(Properties.theme.ResourceManager.GetString(Properties.Appearance.Default.theme + "_udSizeX")), int.Parse(Properties.theme.ResourceManager.GetString(Properties.Appearance.Default.theme + "_udSizeY")));
+            //设置窗口大小
+            this.Size = new Size(int.Parse(Properties.theme.ResourceManager.GetString(Properties.Appearance.Default.theme + "_sizeX")), int.Parse(Properties.theme.ResourceManager.GetString(Properties.Appearance.Default.theme + "_sizeY")));
+            //设置速度标签位置
+            uploadSpeed.Location = new Point(int.Parse(Properties.theme.ResourceManager.GetString(Properties.Appearance.Default.theme + "_upLPosX")), int.Parse(Properties.theme.ResourceManager.GetString(Properties.Appearance.Default.theme + "_upLPosY")));
+            downloadSpeed.Location = new Point(int.Parse(Properties.theme.ResourceManager.GetString(Properties.Appearance.Default.theme + "_downLPosX")), int.Parse(Properties.theme.ResourceManager.GetString(Properties.Appearance.Default.theme + "_downLPosY")));
+            //设置字色
+            uploadSpeed.ForeColor = downloadSpeed.ForeColor = Color.FromName(Properties.theme.ResourceManager.GetString(Properties.Appearance.Default.theme + "_foreColor"));
         }
 
         private string getSpeed(long speed)
@@ -106,15 +128,15 @@ namespace NetMonitor
                 return (speed / 1024.0).ToString("F2") + "KB";
             return (speed / 1048576.0).ToString("F2") + "MB";
         }
-
+        
         private void timer1_Tick(object sender, EventArgs e)
         {
 			foreach (NetworkAdapter tmp in monitor.Adapters)
 			{
 				if (tmp.Name == Properties.Settings.Default.NetAdapter)
 				{
-					uploadSpeed.Text = rm.GetString("upload") + getSpeed(tmp.UploadSpeed);
-					downloadSpeed.Text = rm.GetString("download") + getSpeed(tmp.DownloadSpeed);
+					uploadSpeed.Text = getSpeed(tmp.UploadSpeed);
+					downloadSpeed.Text = getSpeed(tmp.DownloadSpeed);
 				}
 			}
         }
@@ -155,5 +177,10 @@ namespace NetMonitor
 			Properties.Appearance.Default.Save();
 			Form1_Load(null, null);
 		}
-	}
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new AboutBox().ShowDialog();
+        }
+    }
 }

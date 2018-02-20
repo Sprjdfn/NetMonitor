@@ -24,7 +24,7 @@ namespace NetMonitor
 			int cnt = 0;
 			foreach (string tmp in allTheme)
 			{
-				themeImageList.Images.Add(Properties.theme.ResourceManager.GetObject(tmp) as Image);
+				themeImageList.Images.Add(Properties.theme.ResourceManager.GetObject(tmp+"_view") as Image);
 				ListViewItem newItem = new ListViewItem();
 				newItem.ImageIndex = cnt;
 				newItem.Text = tmp;
